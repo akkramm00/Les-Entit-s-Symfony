@@ -50,6 +50,11 @@
           </p>
           
            <h1>Création d'une Entité</h1>
+          <p>
+            Il est possible de créer manuellement un fichier PHP dans le dossier  Entity et de developper l'entité avec ses méthodes et ses attributs, puis de faire une migration vers la base de données. Mais , grace à maker-bundle que nous avons installé? Doctrine peut nous aider à créer facilement en Entité. Alors, créons un Entité "tache" que nous appellerons "Task" puis détaillons notre nouvelle entité.<br><br>
+
+            
+          </p>
           
         </div>
       </div>
