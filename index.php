@@ -40,12 +40,16 @@
             * serverVersion doit contenir la version du serveur que votre ordinateur utilise.<br><br>
 
             Les bases de données relationnelles les plus utilisées 
-             sont MySQL, Mariadb, PostgreSQL, SQlite, oci8 .<br>
-            
-            
-            
-            
+             sont MySQL, Mariadb, PostgreSQL, SQlite, oci8 .<br><br>
+
+            Nous pouvons maintenant créer la base de données avec lla commande suivante: <br><br>
+
+            " $ php bin/console doctrine:database:create "<br><br>
+
+            il convient également , comme pour tout projet , de préparer le desing de votre base de données . Pour cela on pourra utiliser UML pour la partie objet ou imaginer notre base de données et ses tables avec "Merise"
           </p>
+          
+           <h1>Création d'une Entité</h1>
           
         </div>
       </div>
