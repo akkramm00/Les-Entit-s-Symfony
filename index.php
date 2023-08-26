@@ -31,7 +31,17 @@
 
             Voici un exemple :<br><br>
 
-            DATABASE_URL="mysql:/db_user:db_password@127.0.0.1:3306/db_name?serverVersion=mariadb-10.4.17&charset=utf8mb4"
+            DATABASE_URL="mysql:/db_user:db_password@127.0.0.1:3306/db_name?serverVersion=mariadb-10.4.17&charset=utf8mb4" <br><br>
+
+            * db_user est à remplacer par votre nom d'utilisateur de la base de données<br>
+            * db_password est a remplacer par le mot de passe pour accéder à la base de données<br>
+            * db_name est à remplacer par le nom que vous souhaiter donner a la base de données.<br>
+            * 3306 est le port par defaut, mais il vous faudra vérifier que c"est bien celui-ci utiliser pour l'accès à votre base de données<br>
+            * serverVersion doit contenir la version du serveur que votre ordinateur utilise.<br><br>
+
+            Les bases de données relationnelles les plus utilisées 
+             sont MySQL, Mariadb, PostgreSQL, SQlite, oci8 .<br>
+            
             
             
             
