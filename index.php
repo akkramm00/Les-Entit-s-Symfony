@@ -57,7 +57,17 @@
           <p>
             MakerBundle est un composantt exclusivement développé pour aider à la création des controlleurs, de formulaires ou d'entités. Ainsi une fois installé, vous pouvez créer une entité  avec la ligne de commande suivante: <br><br>
 
-            "$ php bin/console make:entity"
+            "$ php bin/console make:entity" <br>
+             Le terminal va nous demander le nom de l'entité que nous voulons créer. <bbr>
+               => Tapons dans l'invite de commande : > Taskl <br>
+               Notons que si nous rentrons le d'une entité  déja existante, il modifiera cette entité. Kaker vient de créer une entité "Task" dans: <br>
+               src/Entity/Task.php et un repository dans :<br>
+               src/repository/TaskRepository.php <br>
+               Ensuite la cosole demande de créer une nouvelle propriété. Saisissons :<br>
+               > createAt <br>
+               Maker nous demande le type que nous voulons donner à notre propriété et par defaut suppose (grace au nom) que nous voulons le type "datetime_immutable". Mais , si nous voulons choisir un autre type, nous pouvous découvrir la liste en rentrant "?". <br>
+               Validons le type proposé à savoir " datetime_immutable".<br>
+               
           </p>
         </div>
       </div>
