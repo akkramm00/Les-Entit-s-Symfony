@@ -67,6 +67,36 @@
                > createAt <br>
                Maker nous demande le type que nous voulons donner à notre propriété et par defaut suppose (grace au nom) que nous voulons le type "datetime_immutable". Mais , si nous voulons choisir un autre type, nous pouvous découvrir la liste en rentrant "?". <br>
                Validons le type proposé à savoir " datetime_immutable".<br>
+               <br><br>Maintenant le terminal demande si nous voulons rendre cette propriété "nullable" ou pas et par défaut? il propose non. <br>
+               En d'autre termes, est-ce que la datte est obligatoire ou facultative? validons cette question car effectivement nous ne voulmons pas qu'une tâche ne puisse pas avoir de date de création. <br>v
+                Ensuite il nous demande si nous voulons créer une autre propriété. Saisissons: <br>
+               >title <br>
+               Validons string, 255 ('c'est le nombre amximum de caractères et non null)<br><br>
+
+               Ajoutons la propriété : <br>
+               > content <br>
+               Cette fois-ci tapons "text" et validons non null <br><br>
+               Enfin , ajoutons la prop^riété isDone qui nous permettra de savoir si une tache est validée ou pas <br>
+               > isDone v
+               C'est un boolean non null <br><br>
+               
+               Pour finirla bréation de notre Entité, il suffit de taper enter quand l'invitation propose de créer une noiuvelle propriété.<br><br>
+               NOus devrions voir le message "success !" ainsi que l'invitation de taper la ligne de commande :<br>
+               "php bin/console make:migration"
+               <br><br>
+               Cette commande va nous permettre de créer une classe  qui décrit les changements nécessaires afin de mettre à jour le schema de la base de données. Cette classe de migration permettra à notre projet d'etre tout le temps synchonisé avec notre base de données et voir si celle-ci est bien à jour avec nos dérnieres modification/Ajout entité.<br><br>
+               Nous la retrouverons dans le dossier migrations/ à la racine de notre projet. Une fois cette lignne de commande effectuée nous devons avoir le message "success" ainsi que le chemin du nouveau fichier de migration qui vient d'etre crée.<br><br>
+
+               La dérnière étape est mettre à jour la base de données gràce à cette migration? avec la ligne de commande qui est proposée , à savoir: <br><br>
+               "php bin/console doctrine:migration:migrate" 
+               <br><br>
+
+               Nous avons un message d'avertissement qui nous prévient que si nous validons le schéma de la base de données étant mis à jour, nous pourrions perdre des données. Notre BDD est au courant que sa dernière structure dépebd de la dernière classe de migration. Veillons donc tounours à ce que la dernbière classe de miogration soit bien éxécutée.
+               
+               
+               
+               
+        
                
           </p>
         </div>
