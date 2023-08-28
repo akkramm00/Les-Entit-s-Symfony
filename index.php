@@ -4,7 +4,7 @@
     <title>Les Entités</title>
   </head>
   <body>
-    <header class="container-fluid  bg-dark text-light">
+    <header class="container-fluid  bg-dark text-light py-3">
       <div class="row d-flex justify-content-between align-items-center">
         <div class="col-12  d-flex justify-content-between align-items-center w-100">
   
