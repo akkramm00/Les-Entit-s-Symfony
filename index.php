@@ -92,13 +92,33 @@
                <br><br>
 
                Nous avons un message d'avertissement qui nous prévient que si nous validons le schéma de la base de données étant mis à jour, nous pourrions perdre des données. Notre BDD est au courant que sa dernière structure dépebd de la dernière classe de migration. Veillons donc tounours à ce que la dernbière classe de miogration soit bien éxécutée.
-               
-               
-               
-               
-        
-               
           </p>
+
+               <h2>Analyse du code d'Entité</h2>
+               <p>
+                 C'est un fichier PHP et donc commence par la balise ouvrante de php. L'entité est une classe qui se nomme "Task". <br>
+                 Elle a un namespace comme totutes las classes avec "Symfony" et utlise les classes TaskRepository, ainsi que deux autre classes de Doctrine qui servent au mapping ainsi qu'au typage. <br> <br>
+
+                 Vous avez certainement remarqué l'atribbuts ci-dessous qui est positionné avant que la classe ne commence : <br> <br>
+                 #[ORM\Entity(repositoryClass: TaskRepository::class)] 
+                  <br> <br>
+                 Cet attribut permet de préciser à Doctrine le Repository qui est relié avec cette Entité. il s'applique sur la classe . Voila pourquoi il est situé avant celle-ci
+                  <br> <br>
+                 Ensuite nous avons en private les variables suivantes:
+                  <br> <br>
+                 
+                 <ul>
+                   <li>$id</li>
+                   <li>$createAt</li>
+                   <li>$title</li>
+                   <li>$content</li>
+                   <li>$isDone</li>
+                 </ul>
+
+                <br> <br>
+               Ici , les attributs précisent également les métadonnées nécesaires à Doctrine( Voir bloc information: annotations et attributs dans la suite du cours) Vous avez certainement remarqué la présence de $id  que nous n'avons pa sdemandé lors de la création de notre Entité . En effet, Doctrine crée automatiquement et systèmatiquement une colonne ou champ "id"              <br> <br>
+             
+             Ensuite , vous pouvez constater la mise en place des getters et setters qui vous permettront d'avoir un accès aux varaibles dans le code et les modifier             </p>
         </div>
       </div>
     </div>
