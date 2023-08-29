@@ -61,7 +61,21 @@
           <br><br>
           
           <h4>ManuToMay</h4>
-          Cette relation peemet à plein d'objet d'etre en relation avec plein d'autres. Cette relation a pour particularité de créer une table de jointure entre les deux entités liées. Cette table ne doit pas etre modifiéé, elle est implicitement créée par doctrine pour retenir les foreignkeys de chacune des entités pour chaque relation entre elles.
+          Cette relation peemet à plein d'objet d'etre en relation avec plein d'autres. Cette relation a pour particularité de créer une table de jointure entre les deux entités liées. Cette table ne doit pas etre modifiéé, elle est implicitement créée par doctrine pour retenir les foreignkeys de chacune des entités pour chaque relation entre elles.<br><br>
+
+          Precisons l'exemple , nous pourrions créer des catégories d'articles suivant:
+          
+          <ul>
+            <li>Sportif</li>
+            <li>Informatique</li>
+            <li>Jeux vidéo</li>
+            <li>Politique</li>
+            <li>Economique</li>
+          </ul>
+          <br><br>
+          Nous pouvons ajouter autant de catégories que l'on souhaite. il suffit de créer un objet catégorie à partir de l'entité Catégorie. Mais imaginons qu'un article se rapporte sur un nouveau devisce de Google ou apple. il sera possible de classer cet article dans la ctégorie économique et dans la partie informatique. On parle de la relation entre les entités Article et Catégorie de ManyToMany car un article peut avoir plusieurs catégories et qu'une catégorie peut avoir plusieurs articles.
+          
+          
           </p>
      </div>
       </div>
