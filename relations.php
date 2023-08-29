@@ -74,8 +74,18 @@
           </ul>
           <br><br>
           Nous pouvons ajouter autant de catégories que l'on souhaite. il suffit de créer un objet catégorie à partir de l'entité Catégorie. Mais imaginons qu'un article se rapporte sur un nouveau devisce de Google ou apple. il sera possible de classer cet article dans la ctégorie économique et dans la partie informatique. On parle de la relation entre les entités Article et Catégorie de ManyToMany car un article peut avoir plusieurs catégories et qu'une catégorie peut avoir plusieurs articles.
-          
-          
+        
+          </p>
+          <h2>Essentiel</h2>
+          <p>
+            Dans ce cours nous avons vu un élément important dans Symfony à savoir "l'entité".<br>
+            Les Entités sont des objets qui seront gérés par l'ORM Doctrine. Ces objets ont des propriétés ou attributs ainsi que des méthodes. Chaque Entité a un Repository associé afin de permettre à Doctrine de persister des données et de personnaliser des requêtes.<br><br>
+
+            En fait les Entités sont un élément du module dans le MVC. Le modèle ou logique métier a pour ro^le de travailler afin de fournir les informations de la base de données(dans les exemples que nous avons vu) afin de permettre au controlleur de faire passer ses informations à la vue .
+            <br><br>
+
+            Les Entités peuvent etre reliées entre elles grace à ce qu'onappelle des relations, nous avons décrit les différents types de realtion utilisées à savoir OneToOne, OneToMany, ManyToOne et ManyToMany, ce qui permet de créer des bases de données relationnelles très simple ou très coplexe. Alors , n'oubliez jamais de créer vos diagrammes UML avant de commencer à développer vos entités . Votre diagramme de classes peut véritablement vous aider à ne pas vous tromper dans le positionnement de vos relations <br>
+            Maintenant , ilvous reste à maitriser la manipulation des Entités avec Doctrine, c'est un chapitre à part entière que nous vous encourageons à approffondir.          
           </p>
      </div>
       </div>
